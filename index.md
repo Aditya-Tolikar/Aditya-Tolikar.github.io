@@ -7,6 +7,5 @@ However, the website is not ready yet as it is not my highest priority task as o
 
 For now, why don't you try:
 
-[My LinkedIn account](https://www.linkedin.com/in/aditya-tolikar-703357167/) if you are interested in a professional connection.
-
-[My Fiverr account](https://www.fiverr.com/aditya_at) if you want to see what I usually freelance for.
+-[My LinkedIn account](https://www.linkedin.com/in/aditya-tolikar-703357167/) if you are interested in a professional connection.
+-[My Fiverr account](https://www.fiverr.com/aditya_at) if you want to see what I usually freelance for.
