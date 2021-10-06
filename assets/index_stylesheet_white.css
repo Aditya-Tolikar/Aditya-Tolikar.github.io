@@ -1,0 +1,49 @@
+:root {
+	--background-colour: #ffffff;
+	--text-colour: #000000;
+	--default-font-family: Segoe UI;
+}
+
+
+html {
+	font-family: var(--default-font-family);
+
+}
+body {
+	color: var(--text-colour);
+	background-color: var(--background-colour);
+	margin: 0;
+}
+.header {
+	text-align: left;
+	font-size: 130%;
+	padding: 50px;
+	background-image: url("../assets/header_alt_background.png");
+	background-size: 2240px 120%;
+	/*background-max-height: 50px;*/
+	/*background-clip: border-box;*/
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-attachment: fixed;*/
+}
+.themechanger {
+	float: right;
+}
+.mename {
+	font-size: 170%;
+	font-variant: small-caps;
+}
+.mail-id {
+	font-family: Segoe UI;
+}
+.spacer1 {
+	padding: 20px;
+}
+.not-ready {
+	background-color: #eeeeee;
+	border-color: #006D99;
+	box-sizing: border-box;
+	width: 85%;
+	margin: auto;
+	padding: 2%;
+}
