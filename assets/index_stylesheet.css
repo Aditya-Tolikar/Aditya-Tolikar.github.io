@@ -2,11 +2,13 @@
 		--background-colour: #000000;
 		--text-colour: #0CB57F;
 		--section-background-colour: rgba(25, 25, 25, 0.4);
+		--button-colour: white;
 }
 [data-theme="light"]{
 		--background-colour: #ffffff;
 		--text-colour: #000000;
 		--section-background-colour: rgba(238, 238, 238, 0.4);
+		--button-colour: black;
 }
 
 :root {	
@@ -42,6 +44,10 @@ body {
 }
 .themechanger {
 	float: right;
+	background-color: var(--button-colour);
+	/*border-color: var(--button-colour);*/
+	border: none;
+	padding: 10px 10px;
 }
 .mename {
 	font-size: 170%;
