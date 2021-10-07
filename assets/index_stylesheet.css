@@ -23,7 +23,7 @@ html {
 body {
 	color: var(--text-colour);
 	background-color: var(--background-colour);
-	background-image: url("../assets/header_alt_background.png");
+	background-image: url("../assets/header_alt_background.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
