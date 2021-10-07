@@ -14,7 +14,11 @@ function changeTheme()
 	if (document.documentElement.getAttribute("data-theme") == "dark")
 	{
 		document.documentElement.setAttribute("data-theme", "light");
+		document.getElementsByClassName('themechanger')[0].setAttribute("title", "Dark Theme");
 	}
 	else
+	{
 		document.documentElement.setAttribute("data-theme", "dark");
+		document.getElementsByClassName('themechanger')[0].setAttribute("title", "Light Theme");
+	}
 }
