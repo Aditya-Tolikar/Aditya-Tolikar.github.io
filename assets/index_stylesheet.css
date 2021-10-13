@@ -65,13 +65,14 @@ body {
 .nav-button {
 	
 }
+/*.fixed-on-top + .compensator {
+	padding: var(--JS-calculated-navbar-height);
+}*/
 .fixed-on-top {
-	position: fixed;
+	position: sticky;
 	top: 0;
 }
-.fixed-on-top + .compensator {
-	padding: var(--JS-calculated-navbar-height);
-}
+
 .themechanger {
 	float: right;
 	background-color: var(--button-colour);
