@@ -13,6 +13,7 @@
 
 :root {	
 	--default-font-family: Segoe UI;
+	--JS-calculated-navbar-height: 60.5px;
 }
 
 
@@ -23,7 +24,7 @@ html {
 body {
 	color: var(--text-colour);
 	background-color: var(--background-colour);
-	background-image: url("../assets/header_alt_background.webp");
+	background-image: url("../assets/header_alt_background.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -41,6 +42,35 @@ body {
 	/*background-max-height: 50px;*/
 	/*background-clip: border-box;*/
 	/*background-attachment: fixed;*/
+}
+.transparent-navbar {
+	background-color: var(--section-background-colour);
+	padding: 0;
+}
+.flex-nav {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+.flex-nav li {
+	flex: auto;
+	text-align: center;
+	padding: 1.6em;
+}
+.flex-nav .button:hover {
+     background: red;
+}
+.nav-button {
+	
+}
+.fixed-on-top {
+	position: fixed;
+	top: 0;
+}
+.fixed-on-top + .compensator {
+	padding: var(--JS-calculated-navbar-height);
 }
 .themechanger {
 	float: right;
