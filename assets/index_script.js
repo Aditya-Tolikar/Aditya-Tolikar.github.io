@@ -25,8 +25,8 @@ function changeTheme()
 
 function ScrollNavBar()
 {
-	var navbar_height = document.getElementById("navbar").offsetHeight;
-	document.documentElement.style.setProperty("--JS-calculated-navbar-height", navbar_height/2 + 'px');
+	/*var navbar_height = document.getElementById("navbar").offsetHeight;
+	document.documentElement.style.setProperty("--JS-calculated-navbar-height", navbar_height/2 + 'px');*/
 	
 	/*var header_height = document.getElementsByClassName('header')[0].offsetHeight;*/
 	if (window.pageYOffset >= document.getElementById("header").offsetHeight)
