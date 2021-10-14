@@ -26,8 +26,7 @@ function changeTheme()
 function ScrollNavBar()
 {
 	/*var navbar_height = document.getElementById("navbar").offsetHeight;
-	document.documentElement.style.setProperty("--JS-calculated-navbar-height", navbar_height/2 + 'px');*/
-	
+	document.documentElement.style.setProperty("--JS-calculated-navbar-height", navbar_height/2 + 'px');*/	
 	/*var header_height = document.getElementsByClassName('header')[0].offsetHeight;*/
 	if (window.pageYOffset >= document.getElementById("header").offsetHeight)
 	{
@@ -47,6 +46,7 @@ function ScrollNavBar()
 function StartX()
 {
 	SetPreferredColourScheme();
+
 	if (window.addEventListener)
 	{
 		window.addEventListener ("scroll", function() {ScrollNavBar();});
