@@ -3,17 +3,23 @@
 		--text-colour: #0CB57F;
 		--section-background-colour: rgba(25, 25, 25, 0.4);
 		--button-colour: white;
+		--nav-button-hover-background: rgba(20, 103, 140, 0.4);
+		--nav-button-hover-colour: white;
+		--nav-button-text-colour: var(--text-colour);
 }
 [data-theme="light"]{
 		--background-colour: #ffffff;
 		--text-colour: #000000;
 		--section-background-colour: rgba(238, 238, 238, 0.4);
 		--button-colour: black;
+		--nav-button-hover-background: rgba(20, 103, 140, 0.4);
+		--nav-button-hover-colour: black;
+		--nav-button-text-colour: var(--text-colour)
 }
 
 :root {	
 	--default-font-family: Segoe UI;
-	--JS-calculated-navbar-height: 60.5px;
+	--Box-hdr_name_contact-Height: 200px;
 }
 
 
@@ -24,24 +30,57 @@ html {
 body {
 	color: var(--text-colour);
 	background-color: var(--background-colour);
-	background-image: url("../assets/header_alt_background.webp");
+	background-image: url("../assets/header_alt_background.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	margin: 0;
 }
+
+.hdr-grid1 { grid-area: name_contact; }
+.hdr-grid2 { grid-area: photo; }
+.hdr-grid3 { grid-area: theme_button; }
 .header {
 	text-align: left;
 	font-size: 130%;
 	padding: 50px;
-	/*background-image: url("../assets/header_alt_background.png");
-	background-size: 2240px 120%;
-	background-repeat: no-repeat;
-	background-position: center;*/
-	/*background-max-height: 50px;*/
-	/*background-clip: border-box;*/
-	/*background-attachment: fixed;*/
+}
+.grid-header {
+	display: grid;
+	/*grid-template-columns: repeat(auto-fit);
+	grid-template-areas: 'name_contact photo theme_button';
+	grid-template-rows: var(--Box-hdr_name_contact-Height);
+	grid-template-columns: 7fr 3fr min-content;*/
+}
+@media (min-width: 470px) {
+	.grid-header {
+		grid-template-areas: 'name_contact photo theme_button';
+		grid-template-rows: var(--Box-hdr_name_contact-Height);
+		grid-template-columns: 7fr 3fr min-content;
+	}
+}
+@media (max-width: 470px) {
+	.grid-header {
+		grid-template-areas:
+			'name_contact theme_button'
+			'photo theme_button';
+		grid-template-rows: var(--Box-hdr_name_contact-Height) min-content;
+		grid-template-columns: 7fr min-content;
+	}
+}
+.mename {
+	font-size: 170%;
+	font-variant: small-caps;
+}
+.mail-id {
+	font-family: Segoe UI;
+}
+.passport-face>img {
+	display: none;
+	object-fit: contain;
+	width: 100%;
+	max-height: 100%;
 }
 .transparent-navbar {
 	background-color: var(--section-background-colour);
@@ -54,13 +93,19 @@ body {
 	align-content: flex-start;
 	flex-wrap: wrap;
 }
-.flex-nav li {
+.flex-nav .button {
 	flex: auto;
 	text-align: center;
+	color: var(--nav-button-text-colour);
+}
+.flex-nav li {
+	text-align: center;
 	padding: 1.6em;
+	font-variant: small-caps;
 }
 .flex-nav .button:hover {
-     background: red;
+	background: var(--nav-button-hover-background);
+	color: var(--nav-button-hover-colour);
 }
 .nav-button {
 	
@@ -74,27 +119,26 @@ body {
 }
 
 .themechanger {
-	float: right;
+	/*float: right;*/
 	background-color: var(--button-colour);
 	/*border-color: var(--button-colour);*/
 	border: none;
-	padding: 10px 10px;
+	/*padding: 10px 10px;*/
+	height: 20px;
+	width: 20px;
 }
-.mename {
-	font-size: 170%;
-	font-variant: small-caps;
-}
-.mail-id {
-	font-family: Segoe UI;
-}
+
 .spacer1 {
 	padding: 20px;
 }
-.not-ready {
+.default-piece {
 	background-color: var(--section-background-colour);
 	border-color: #006D99;
 	box-sizing: border-box;
 	width: 85%;
 	margin: auto;
 	padding: 2%;
+}
+.not-ready {
+	/*display: none;*/
 }
