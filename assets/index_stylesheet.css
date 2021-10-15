@@ -75,6 +75,7 @@ body {
 }
 .mail-id {
 	font-family: Segoe UI;
+	cursor: copy;
 }
 .passport-face>img {
 	display: none;
@@ -141,4 +142,20 @@ body {
 }
 .not-ready {
 	/*display: none;*/
+}
+#pop-up-message {
+	display: none;
+	position: fixed;
+	vertical-align: middle;
+	left: 50%;
+    transform: translateX(-50%);
+	text-align: center;
+	margin: auto;
+	padding: 2%;
+	background-color: var(--nav-button-hover-background);
+	border-color: #006D99;
+	box-sizing: border-box;
+	width: auto;
+	font-size: 170%
+	
 }
