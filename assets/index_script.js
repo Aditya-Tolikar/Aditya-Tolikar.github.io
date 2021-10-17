@@ -36,12 +36,14 @@ function ScrollNavBar()
 		document.getElementById("navbar").style.top = 0;*/
 		document.getElementById("navbar").classList.remove("below-header");
 		document.getElementById("navbar").classList.add("fixed-on-top");
+		document.getElementsByClassName("nav-grid2")[0].style.display = "";
 	}
 	else
 	{
 		/*document.getElementById("header").style.position = "reative";*/
 		document.getElementById("navbar").classList.remove("fixed-on-top");
 		document.getElementById("navbar").classList.add("below-header");
+		document.getElementsByClassName("nav-grid2")[0].style.display = "none";
 	}
 }
 
