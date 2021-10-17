@@ -6,6 +6,7 @@
 		--nav-button-hover-background: rgba(20, 103, 140, 0.4);
 		--nav-button-hover-colour: white;
 		--nav-button-text-colour: var(--text-colour);
+		--floating-navbar-background-colour: rgba(25, 25, 25, 0.8);
 }
 [data-theme="light"]{
 		--background-colour: #ffffff;
@@ -14,7 +15,8 @@
 		--button-colour: black;
 		--nav-button-hover-background: rgba(20, 103, 140, 0.4);
 		--nav-button-hover-colour: black;
-		--nav-button-text-colour: var(--text-colour)
+		--nav-button-text-colour: var(--text-colour);
+		--floating-navbar-background-colour: rgba(238, 238, 238, 0.8);
 }
 
 :root {	
@@ -87,6 +89,28 @@ body {
 	background-color: var(--section-background-colour);
 	padding: 0;
 }
+
+.nav-grid1 { grid-area: navi; }
+.nav-grid2 { grid-area: themechanger;
+	/*display: none;*/
+	align-self: center;
+}
+@media (min-width: 720px) {
+	.nav-grid2 {
+		padding: 2em;
+	}
+}
+	
+/*.nav-empty-grid { grid-area: nothing; }*/
+	
+.grid-navbar {
+	display: grid;
+	grid-template-areas: 
+	/*	'navi nothing'*/
+		'navi themechanger'
+	/*	'navi nothing'*/;
+	grid-template-columns: 9fr min-content;
+}
 .flex-nav {
 	list-style: none;
 	display: flex;
@@ -117,6 +141,7 @@ body {
 .fixed-on-top {
 	position: sticky;
 	top: 0;
+	background-color: var(--floating-navbar-background-colour);
 }
 
 .themechanger {
