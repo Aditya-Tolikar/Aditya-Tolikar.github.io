@@ -7,6 +7,7 @@
 		--nav-button-hover-colour: white;
 		--nav-button-text-colour: var(--text-colour);
 		--floating-navbar-background-colour: rgba(25, 25, 25, 0.8);
+		--M-hover-colour: var(--text-colour);
 }
 [data-theme="light"]{
 		--background-colour: #ffffff;
@@ -17,6 +18,7 @@
 		--nav-button-hover-colour: black;
 		--nav-button-text-colour: var(--text-colour);
 		--floating-navbar-background-colour: rgba(238, 238, 238, 0.8);
+		--M-hover-colour: #000000;
 }
 
 :root {	
@@ -78,6 +80,22 @@ body {
 .mail-id {
 	font-family: Segoe UI;
 	cursor: copy;
+}
+.links {
+	display: flex;
+	align-content: flex-start;
+}
+.links>a {
+	Padding: 0.3em;
+}
+.links>a>img {
+	flex: auto;
+	object-fit: contain;
+	max-width: 50px;
+	max-height: 50px;
+}
+.links>a>img:hover {
+	box-shadow: 0 0 10px 10px var(--nav-button-hover-background);
 }
 .passport-face>img {
 	display: none;
