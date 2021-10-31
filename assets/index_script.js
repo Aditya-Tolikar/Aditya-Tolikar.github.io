@@ -114,7 +114,7 @@ function StartX()
 	SetPreferredColourScheme();
 	//Get height of name_contact box in header and give it to CSS
 	//document.documentElement.style.setProperty("--Box-Calculated-name_contact-Height", document.getElementById("hdr-name-contact").offsetHeight + 'px');
-	
+	document.getElementsByClassName("nav-grid2")[0].style.display = "none";
 	//Event Listeners
 	if (window.addEventListener)
 	{
