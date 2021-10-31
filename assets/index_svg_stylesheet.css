@@ -1,0 +1,40 @@
+/*Mail Icon*/
+#rect1542 {
+	opacity:0.441057;
+	fill:#fff6d5;
+	stroke:none;
+	stroke-width:1.603;
+	stroke-miterlimit:4;
+	stroke-dasharray:none;
+}
+#rect1542:hover {
+	opacity: 0.7;
+	fill: #ffffff;
+}
+#path8062 {
+	opacity:0.654472;
+	fill:#aa0000;
+	stroke:none;
+}
+#path8062:hover {
+	fill: var(--M-hover-colour);
+}
+/*LinkedIn Icon*/
+#rect858 {
+	opacity:1;
+	fill:#0a7080;
+	fill-opacity:1;
+}
+#rect858:hover {
+	fill: #0077b5;
+}
+
+/*Fiverr Icon*/
+#path865 {
+	opacity:0.953252;
+	fill:#1cbf72;
+	fill-opacity:1;
+	stroke:none;
+}#path865:hover {
+	fill:#1cbfae;
+}
