@@ -20,15 +20,23 @@
 		--floating-navbar-background-colour: rgba(238, 238, 238, 0.8);
 		--M-hover-colour: #000000;
 }
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nanum+Gothic&family=Oxygen&display=swap');
+@font-face {
+	font-family: 'Didact Gothic', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Oxygen', sans-serif;
+}
 
-:root {	
-	--default-font-family: Segoe UI;
+:root {
+	--preferred-font-family: Oxygen;
+	--p2-font-family: Didact Gothic;
+	--p3-font-family: Nanum Gothic;
 	--Box-hdr_name_contact-Height: 200px;
 }
 
 
 html {
-	font-family: var(--default-font-family);
+	font-family: var(--preferred-font-family), var(--p2-font-family), var(--p3-font-family), sans-serif;
 
 }
 body {
