@@ -1,0 +1,164 @@
+[data-theme="dark"]{
+		--background-colour: #000000;
+		--text-colour: #0CB57F;
+		--section-background-colour: rgba(25, 25, 25, 0.4);
+		--button-colour: white;
+		--nav-button-hover-background: rgba(20, 103, 140, 0.4);
+		--nav-button-hover-colour: white;
+		--nav-button-text-colour: var(--text-colour);
+		--floating-navbar-background-colour: rgba(25, 25, 25, 0.8);
+		--M-hover-colour: var(--text-colour);
+}
+[data-theme="light"]{
+		--background-colour: #ffffff;
+		--text-colour: #000000;
+		--section-background-colour: rgba(238, 238, 238, 0.4);
+		--button-colour: black;
+		--nav-button-hover-background: rgba(20, 103, 140, 0.4);
+		--nav-button-hover-colour: black;
+		--nav-button-text-colour: var(--text-colour);
+		--floating-navbar-background-colour: rgba(238, 238, 238, 0.8);
+		--M-hover-colour: #000000;
+}
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nanum+Gothic&family=Oxygen:wght@300&display=swap');
+@font-face {
+	font-family: 'Didact Gothic', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Oxygen', sans-serif;
+}
+
+:root {
+	--preferred-font-family: Oxygen;
+	--p2-font-family: Didact Gothic;
+	--p3-font-family: Nanum Gothic;
+	--Box-hdr_name_contact-Height: 200px;
+}
+html {
+	font-family: var(--preferred-font-family), var(--p2-font-family), var(--p3-font-family), sans-serif;
+
+}
+body {
+	color: var(--text-colour);
+	background-color: var(--background-colour);
+	background-image: url("../assets/header_alt_background.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	margin: 0;
+}
+
+/*Navbar*/
+.transparent-navbar {
+	background-color: var(--section-background-colour);
+	padding: 0;
+}
+.nav-grid1 { grid-area: navi; }
+.nav-grid2 { grid-area: themechanger;
+	/*display: none;*/
+	align-self: center;
+}
+@media (min-width: 720px) {
+	.nav-grid2 {
+		padding: 2em;
+	}
+}
+.grid-navbar {
+	display: grid;
+	grid-template-areas: 'navi themechanger';
+	grid-template-columns: 9fr min-content;
+}
+.flex-nav {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+.flex-nav .button {
+	flex: auto;
+	text-align: center;
+	color: var(--nav-button-text-colour);
+}
+.flex-nav li {
+	text-align: center;
+	padding: 1.6em;
+	font-variant: small-caps;
+}
+.flex-nav .button:hover {
+	background: var(--nav-button-hover-background);
+	color: var(--nav-button-hover-colour);
+}
+#navbar {
+	position: sticky;
+	top: 0;
+	background-color: var(--floating-navbar-background-colour);
+}
+.themechanger {
+	background-color: var(--button-colour);
+	border: none;
+	height: 20px;
+	width: 20px;
+}
+
+/*Default Containers*/
+.spacer1 {
+	padding: 20px;
+}
+.spacer2 {
+	height: 10px;
+}
+.default-piece {
+	background-color: var(--section-background-colour);
+	border-color: #006D99;
+	box-sizing: border-box;
+	width: 85%;
+	margin: auto;
+	padding: 2%;
+}
+.page-title {
+	background-color: var(--section-background-colour);
+	border-color: #006D99;
+	box-sizing: border-box;
+	width: 100%;
+	margin: auto;
+	padding: 2%;
+	text-align: center;
+}
+.plain-list {
+	list-style: none;
+}
+.retracted > .expanded-value { display: none; }
+.retracted > .retracted-value { display: initial; }
+.expanded > .retracted-value { display: none; }
+.expanded > .expanded-value {display: initial; }
+
+.bar-graph {
+	/*overflow-x: visible;*/
+	white-space: nowrap;
+	object-fit: contain;
+}
+.bar-graph>img {
+	max-height: 18px;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+/*Subjects Grid*/
+
+#PCM-gridded-percentchart {
+	width: 70%;
+	display: grid;
+	grid-gap: 2px;
+	grid-template-columns: auto auto;
+	grid-template-rows: repeat(auto-fill, 22px);
+	grid-auto-flow: row;
+}
+#Languages-gridded-percentchart {
+	width: 70%;
+	display: grid;
+	grid-gap: 2px;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: repeat(auto-fill, 22px);
+	grid-auto-flow: row;
+}
