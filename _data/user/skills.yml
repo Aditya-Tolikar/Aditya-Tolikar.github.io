@@ -1,0 +1,140 @@
+headings:
+    h1 : Skills
+    legend: Skill Markers Explained
+
+levels-explanation:
+    -   l: "1x■ : I have basic usable understanding of it and can be helpful to others where my other related skills maybe useful"
+    -   l: "2x■ : I have a workable understanding of it and can use it for minor tweaking, without requiring any other person's help. Little projects are doable."
+    -   l: "3x■ : I have a good understanding of it and can use it for a project from start to finish. Do not expect speed"
+    -   l: "4x■ : I have built competencies in this skill/tool and you can expect high quality work based on this"
+    -   l: "5x■ : I am able to confidently consult others based on this skill"
+    -   l: "▷ : I am actively cultivating this skill and getting better at it"
+    -   l: "◁ : I have not been using this skill/tool and am not up to date with newer changes"
+    -   l: "□ : I am not significantly getting better at it, but not getting worse at it either"
+
+group-order:
+    -   name: General_Competence
+    -   name: Primary_Domain_Skills
+    -   name: Related_Skills
+    -   name: Primary_Domain_Technologies
+    -   name: Version_Control
+    -   name: Build_Tools
+    -   name: Operating_Systems
+    -   name: Related_Tools
+    -   name: Miscellaneous_Tools
+
+General_Competence:
+    -   name: Task Decomposition During Ideation
+
+Primary_Domain_Skills:
+    -   name: Programming
+        level: 5
+        tendency: +
+
+    -   name: Troubleshooting
+        level: 4
+        tendency: =
+
+    -   name: Spatial Visualization
+        level: 4
+        tendency: =
+
+Primary_Domain_Technologies:
+    -   name: C and C++
+        level: 4
+        tendency: +
+        type: Language
+
+    -   name: Qt Framework
+        level: 4
+        tendency: +
+        type: C++ Libraries
+
+Build_Tools:
+    -   name: make
+        level: 3
+        tendency: +
+
+    -   name: qmake
+        level: 3
+        tendency: =
+
+    -   name: cmake
+        level: 2
+        tendency: +
+
+Version_Control:
+    -   name: git
+        level: 3
+        tendency: +
+
+    -   name: GitHub, GitLab
+        level: 2
+        tendency: +
+
+Related_Tools:
+    -   name: 8085, 8086 Assembly
+        level: 2
+        tendency: =
+        type: Language
+
+    -   name: ARM Assembly
+        level: 2
+        tendency: =
+        type: Language
+
+    -   name: MATLAB
+        level: 2
+        tendency: =
+        type: Proprietary Software and Language
+
+    -   name: VHDL
+        level: 1
+        tendency: =
+        type: Language
+
+Operating_Systems:
+    -   name: Windows OS
+        level: 3
+        tendency: =
+
+    -   name: GNU-Linux
+        level: 3
+        tendency: +
+
+Related_Skills:
+    -   name: Computer Aided Design
+        level: 3
+        tendency: =
+
+Miscellaneous_Tools:
+    -   name: Markdown
+        level: 2
+        tendency: +
+        type: Language
+
+    -   name: Blender
+        level: 2
+        tendency: =
+        type: CAD Software
+
+    -   name: GIMP
+        level: 2
+        tendency: =
+        type: Graphics Software
+
+    -   name: Inkscape
+        level: 2
+        tendency: =
+        type: Graphics Software
+
+    -   name: Audacity
+        level: 1
+        tendency: =
+        type: Audio Development Software
+
+    -   name: HTML, CSS and JS
+        level: 2
+        tendency: +
+        type: Language
+
